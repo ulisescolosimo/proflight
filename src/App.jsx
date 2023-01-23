@@ -1,4 +1,3 @@
-import './App.css'
 import ImageRender from './components/LogoList'
 
 function App() {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/proflight.png";
 
 const LogoList = () => {
-  const [selectedIndex, setSelectedIndex] = useState(2);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const images = [
     {
       path: logo,
@@ -15,7 +15,7 @@ const LogoList = () => {
     },
     {
       path: logo,
-    }
+    },
   ];
 
   const handlePrevClick = () => {
@@ -56,7 +56,7 @@ const LogoList = () => {
           key={index}
           src={image.path}
           className={`w-40 h-40 rounded-xl opacity-${
-            index === selectedIndex ? 100 : 50
+            index == selectedIndex ? 100 : 50
           }`}
         />
       ))}
