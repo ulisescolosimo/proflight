@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/proflight.png";
 
-const ImageRender = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+const LogoList = () => {
+  const [selectedIndex, setSelectedIndex] = useState(2);
   const images = [
     {
       path: logo,
@@ -79,4 +79,4 @@ const ImageRender = () => {
   );
 };
 
-export default ImageRender;
+export default LogoList;
